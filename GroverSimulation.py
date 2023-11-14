@@ -1,6 +1,5 @@
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
 
-
 def grover(n: int):
     '''
     This function output Grover's algorithm circuit for a specific target. 
@@ -12,12 +11,6 @@ def grover(n: int):
     Return:
         qcirc: A QuantumCircuit object of your implementation of Grover's algorithm
     '''
-    qcirc = None
-
-    ############################################################################
-    # Student code begin
-    ############################################################################
-    qcirc = QuantumCircuit(3)
     qcirc.h([0, 1, 2])
     qcirc.barrier()
     
@@ -42,10 +35,6 @@ def grover(n: int):
         qcirc.h([0, 1, 2])
         qcirc.barrier()
         qcirc.barrier()
-    ############################################################################
-    # Student code end
-    ############################################################################
-
     return qcirc
 grover(1) 
 grover(2) 
